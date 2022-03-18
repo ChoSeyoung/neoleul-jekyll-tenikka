@@ -1,0 +1,41 @@
+html {
+    font-size: 16px;
+}
+p{
+    margin: 0;
+}
+body {
+    width: 992px;
+    background-color: #000;
+    color: lightgray;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(255, 255, 255);
+}
+.ascii {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.clickable {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.clickable:hover {
+    background-color: lightgray;
+    color: black;
+}
+.divider-top {
+    border-top: 1px dashed white;
+}
+
+.divider-bottom{
+    border-bottom: 1px dashed white;
+}
+
+.content {}
+.content > .tail {
+    padding-top: 1rem;
+    /*display: none;*/
+}

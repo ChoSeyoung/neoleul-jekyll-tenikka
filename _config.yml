@@ -5,5 +5,5 @@ defaults:
       type: "posts"
     values:
       layout: "default"
-paginate: 10
-paginate_path: "/page:num"
+
+baseurl: /neoleul-jekyll-tenikka

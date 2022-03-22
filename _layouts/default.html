@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>y2k</title>
     <link rel="stylesheet" href="{{ '/resources/default.css ' | prepend: site.baseurl }}">
+    <script>
+        function move(url) {
+            window.location.href = '{{ site.baseurl }}' + url;
+        }
+    </script>
 </head>
 <body>
 <h1 class="d-inline-block clickable" onclick="window.location.href = './'">Hello World!</h1>

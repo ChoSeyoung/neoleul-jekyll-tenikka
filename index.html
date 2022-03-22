@@ -1,75 +1,17 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="resources/common.css">
-</head>
-<body>
-<h1>Hello World!</h1>
-<header>
-    <div class="divider-right">
-        <pre class="ascii">
-                 /'.    /|    .'\                                ,        ,
-           ,._   |+i\  /++\  / +|    ,,                         /(        )`
-           |*+'._/+++\/+ ++\/+++\_.-'+|                         \ \___   / |
-      :-.  \ ++++?++ +++++*++++++ +++ /  .-:                    /- _  `-/  '
-      |*+\_/++++ +++*++ ++++++ ++?++++\_/ +|                   (/\/ \ \   /\
-  ,    \*+++++ ++++ +++*+++ ++++ +++ +++++/   ,                / /   | `    \
-  \'-._> +__+*++__*+++_+__*++ ++__++++__*\_.-'/                O O   ) /    |
-   `>*+++|  \++/  |+*/     `\ +|  |++/  |++++<'                `-^--'`<     '
-_,-'+ * +*\  \/  /++|__.-.  |+ |  |+/  /+ +*+'-._             (_.)  _  )   /
-'-.*+++++++\    /+ ++++++/  / *|  |/  /+ ++++++.-'|            `.___/`    /
-    > *+++++\  /*++++ +/` /`+++|     < *++ +++< |                `-----' /
-_,-'* +++ ++|  |++ +*/` /` +* +|  |\  \+ ++++++'-._ <----.     __ / __   \
-`-._+ +*++?+|  |+++*|  '-----.+|  |+\  \+* ++ +_.-' <----|====O)))==) \) /====
-   _`\++++++|__|+ *+|________|+|__|++\__|++++/`_    <----'    `--' `.__,' \
-  /*++_+* + +++++ ++ + ++++ +++++ ++ ++++ ++_+*+\                 |        |
-  '--' `>*+++ +++++ +++++*++++  +++ ++++ ?<' '--'                 \       /
-       /++_++ ++ ++++++ ++?+ +++++*+++ ++++ \               ______( (_  / \______
-       |_/ `\++ ++ +++*++++++++++ ++++*./`\_|             ,'  ,-----'   |        \
-            /+*.-.*+ +_ ++*+ _+++ .-.* +\                 `--{__________)        \/ 
-        </pre>
-    </div>
-    <div class="info">
-        <p class="name">Cho SeYoung</p>
-        <p class="position">S/W Engineer</p>
-        <p class="belong">Crew <a href="https://soldout.co.kr/">@soldout</a></p>
-        <br>
-        <p class="reference">L I N K</p>
-        <p><a href="https://github.com/ChoSeyoung">[ Github ]</a></p>
-        <p><a href="https://www.youtube.com/premium">[ Youtube ]</a></p>
-        <p><a href="https://www.youtube.com/premium">[ Twitter ]</a></p>
-        <p><a href="https://www.youtube.com/premium">[ Facebook ]</a></p>
-        <p><a href="https://www.youtube.com/premium">[ Instagram ]</a></p>
-    </div>
-</header>
+---
+layout: default
+---
+{% for post in site.posts %}
 <div class="divider-top">&nbsp;</div>
 
 <div class="content">
     <div class="default">
         <p>
-            <span>- [ 2022-03-19 ]</span>
-            <span class="clickable on">Syntax Error</span>
-            <span class="clickable on">[ 미리보기 ]</span>
+            <span>-&nbsp;[&nbsp;{{ post.date | date: "%F" }}&nbsp;]</span>
+            <span class="clickable on" onclick="window.location.href='{{post.url}}'">{{ post.title }}</span>
         </p>
-    </div>
-    <div class="tail">
-        <div class="body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu porta purus. Phasellus ut rhoncus
-                velit, nec ultricies felis. Sed purus augue, blandit pharetra tortor ut, vulputate vehicula lorem.
-                Praesent laoreet vel lectus quis eleifend. Quisque nulla velit, sagittis et erat nec, condimentum
-                scelerisque ex. Praesent eget mauris a massa faucibus porttitor. Donec vitae hendrerit arcu. Curabitur
-                nec blandit magna. Suspendisse potenti. Donec porta pharetra odio eget elementum. Pellentesque rutrum
-                laoreet est, in dapibus mi mattis at. Mauris risus felis, convallis commodo dolor viverra, tempus
-                vulputate tellus.</p>
-            <span class="clickable">[ 더 보기 ]</span>
-        </div>
     </div>
 </div>
 
 <div class="divider-bottom">&nbsp;</div>
-
-
-</body>
-</html>
+{% endfor %}

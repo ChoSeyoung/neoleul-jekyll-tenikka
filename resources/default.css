@@ -50,6 +50,10 @@ header .info > .reference {
     font-size: 1.25rem;
 }
 
+.d-inline-block {
+    display: inline-block !important;
+}
+
 .text-left {
     text-align: left !important;
 }
@@ -96,9 +100,4 @@ header .info > .reference {
 
 .divider-left {
     border-right: 1px dashed white;
-}
-
-.content > .tail {
-    padding-top: 1rem;
-    display: none;
 }

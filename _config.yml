@@ -1,9 +1,1 @@
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "default"
-
-baseurl: /neoleul-jekyll-tenikka
+baseurl: "/neoleul-jekyll-tenikka"

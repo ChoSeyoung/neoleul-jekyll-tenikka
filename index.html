@@ -7,7 +7,7 @@ layout: default
 <div class="content">
     <div class="default">
         <p>
-            <span>-&nbsp;[&nbsp;{{ post.date | date: "%F" }}&nbsp;]</span>
+            <span>-&nbsp;[&nbsp;{{ post.created_at | date: "%F" }}&nbsp;]</span>
             <span class="clickable on" onclick="move('{{post.url}}')">{{ post.title }}</span>
         </p>
     </div>
